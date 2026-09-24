@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="Script.js" defer></script>
+</head>
+
+<body>
+
+    <h1>Grade Calculator</h1>
+
+    <p>
+        <strong>Enter your mark and weighting to get an overall score</strong>
+    </p>
+
+    <!-- ASSESSMENTS -->
+    <div id="assessments"></div>
+
+    <button id="addAssessment">+ Add assessment</button>
+
+    <!-- CURRENT GRADE -->
+    <h2>Current Grade</h2>
+
+    <p>
+        Overall: <span id="result">—</span>
+    </p>
+
+    <p>
+        Grade: <span id="gradeLetter">—</span>
+    </p>
+
+    <button id="calculate">Calculate grade</button>
+
+
+    <!-- TARGET GRADE -->
+    <hr>
+
+    <h2>Target Grade</h2>
+
+    <p>
+        Find out what average you need across your remaining assessments.
+    </p>
+
+    <input
+        id="targetGrade"
+        type="number"
+        placeholder="Target %"
+        min="0"
+        max="100"
+    >
+
+    <button id="calculateTarget">Calculate target</button>
+
+    <p>
+        <strong>
+            <span id="targetResult">—</span>
+        </strong>
+    </p>
+
+
+    <!-- FINAL ASSESSMENT -->
+    <hr>
+
+    <h2>Final Assessment</h2>
+
+    <p>
+        Find out what mark you need on your final assessment.
+    </p>
+
+    <input
+        id="finalTarget"
+        type="number"
+        placeholder="Target %"
+        min="0"
+        max="100"
+    >
+
+    <input
+        id="finalWeight"
+        type="number"
+        placeholder="Final assessment weight %"
+        min="0"
+        max="100"
+    >
+
+    <button id="calculateFinal">Calculate</button>
+
+    <p>
+        You need:
+        <strong>
+            <span id="finalResult">—</span>
+        </strong>
+    </p>
+
+    <p>
+        Target grade:
+        <span id="finalGradeLetter">—</span>
+    </p>
+
+</body>
+</html>
